@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Excel AI Ally',
-  description: '學習 Excel 函數和數據分析技巧',
+  description: '培養 Excel 函數應用與數據分析的實務能力',
 }
 
 export default function RootLayout({
