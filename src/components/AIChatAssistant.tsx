@@ -264,24 +264,17 @@ export function AIChatAssistant() {
       if (pathname === '/') {
         pageContext += "這是首頁。";
       } else if (pathname?.includes('/lessons')) {
-        // 抓出網址最後面的那串 UUID 亂碼
-        const currentId = pathname.split('/').pop(); 
         
-        // 👉 開始精確比對 UUID：
-        if (currentId === 'd1800ecb-97c1-4b92-8f16-241e5e989658') { // 👈 這是你截圖上的第一關 ID
-          pageContext += "當前單元是【關卡1：基礎 Excel 魔法觀念】。";
-        } else if (currentId === '請貼上關卡2的UUID') {
-          pageContext += "當前單元是【關卡2：初階函數修行】。";
-        } else if (currentId === '請貼上關卡3的UUID') {
-          pageContext += "當前單元是【關卡3：判斷之術 IF】。";
-        } else if (currentId === '請貼上關卡4的UUID') {
-          pageContext += "當前單元是【關卡4：統計召喚法陣】。";
-        } else if (currentId === '請貼上關卡5的UUID') {
-          pageContext += "當前單元是【關卡5：資料迷宮的魔法指南】。";
-        }
+        // ✅ 讓 AI 自己去網頁上「看」標題！
+        // 尋找網頁中內容區塊的大標題 (根據你的樣式，通常是在 .neo-prose 裡面的 h1)
+        const titleElement = document.querySelector('.neo-prose h1') || document.querySelector('h1');
+        const lessonTitle = titleElement ? titleElement.textContent : "Excel 學習單元";
 
-        // 判斷挑戰題
-        if (pathname.includes('/challenge')) {
+        // 把抓到的真實標題告訴 AI
+        pageContext += `當前單元是：【${lessonTitle}】。`;
+
+        // 判斷是在看內容還是做題目
+        if (pathname.includes('/challenge') || document.body.textContent?.includes('Challenge')) {
           pageContext += "使用者正在進行此關卡的「挑戰題」，請給予引導與提示，絕對不要直接給答案！";
         } else {
           pageContext += "使用者正在瀏覽此關卡的「課程內容」。";
