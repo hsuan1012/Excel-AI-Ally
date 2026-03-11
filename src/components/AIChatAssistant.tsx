@@ -260,9 +260,24 @@ export function AIChatAssistant() {
       const context = chatMessages.slice(-10).map(m => ({ content: m.content, isUser: m.isUser }));
       
       let pageContext = `使用者目前在網站的路徑: ${pathname}。`;
-      if (pathname === '/') pageContext += "這是首頁。";
-      else if (pathname?.includes('/challenge')) pageContext += "使用者正在進行挑戰題，請給予引導而非直接給答案。";
-      else if (pathname?.includes('/lessons')) pageContext += "使用者正在瀏覽課程內容。";
+
+      if (pathname === '/') {
+        pageContext += "這是首頁。";
+      } else if (pathname?.includes('/lessons')) {
+        // 幫 AI 翻譯網址對應的關卡
+        if (pathname.includes('1')) pageContext += "當前單元是【關卡1：基礎 Excel 魔法觀念】。";
+        else if (pathname.includes('2')) pageContext += "當前單元是【關卡2：初階函數修行】。";
+        else if (pathname.includes('3')) pageContext += "當前單元是【關卡3：判斷之術 IF】。";
+        else if (pathname.includes('4')) pageContext += "當前單元是【關卡4：統計召喚法陣】。";
+        else if (pathname.includes('5')) pageContext += "當前單元是【關卡5：資料迷宮的魔法指南】。";
+        
+        // 判斷是在看內容還是做題目
+        if (pathname.includes('/challenge')) {
+          pageContext += "使用者正在進行此關卡的「挑戰題」，請給予引導與提示，絕對不要直接給答案！";
+        } else {
+          pageContext += "使用者正在瀏覽此關卡的「課程內容」。";
+        }
+      }
 
       const response = await getChatResponse(newMessage.content, { context, lessonInfo: pageContext }, newMessage.imageUrl);
       
