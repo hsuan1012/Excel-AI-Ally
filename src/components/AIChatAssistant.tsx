@@ -264,11 +264,21 @@ export function AIChatAssistant() {
       if (pathname === '/') {
         pageContext += "這是首頁。";
       } else if (pathname?.includes('/lessons')) {
+        // 抓出網址最後面的那串 UUID 亂碼
+        const currentId = pathname.split('/').pop(); 
         
-        // 讓程式碼直接去抓網頁上 <title> 或 <h1> 的文字當作當前單元
-        // 這樣 AI 就會看到 "關卡 3：判斷之術 IF" 這種中文字了！
-        const pageTitle = document.title || "Excel 學習單元";
-        pageContext += `當前單元標題是：【${pageTitle}】。`;
+        // 👉 開始精確比對 UUID：
+        if (currentId === 'd1800ecb-97c1-4b92-8f16-241e5e989658') { // 👈 這是你截圖上的第一關 ID
+          pageContext += "當前單元是【關卡1：基礎 Excel 魔法觀念】。";
+        } else if (currentId === '請貼上關卡2的UUID') {
+          pageContext += "當前單元是【關卡2：初階函數修行】。";
+        } else if (currentId === '請貼上關卡3的UUID') {
+          pageContext += "當前單元是【關卡3：判斷之術 IF】。";
+        } else if (currentId === '請貼上關卡4的UUID') {
+          pageContext += "當前單元是【關卡4：統計召喚法陣】。";
+        } else if (currentId === '請貼上關卡5的UUID') {
+          pageContext += "當前單元是【關卡5：資料迷宮的魔法指南】。";
+        }
 
         // 判斷挑戰題
         if (pathname.includes('/challenge')) {
