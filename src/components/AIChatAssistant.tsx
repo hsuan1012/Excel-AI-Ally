@@ -265,16 +265,24 @@ export function AIChatAssistant() {
         pageContext += "這是首頁。";
       } else if (pathname?.includes('/lessons')) {
         
-        // ✅ 讓 AI 自己去網頁上「看」標題！
-        // 尋找網頁中內容區塊的大標題 (根據你的樣式，通常是在 .neo-prose 裡面的 h1)
-        const titleElement = document.querySelector('.neo-prose h1') || document.querySelector('h1');
-        const lessonTitle = titleElement ? titleElement.textContent : "Excel 學習單元";
+        // 🚀 終極必殺技：直接掃描網頁上的「所有文字」！
+        const pageText = document.body.innerText || "";
+        
+        // 只要畫面上出現過這些獨特的關鍵字，就絕對不會認錯：
+        if (pageText.includes('基礎 Excel 魔法觀念')) { 
+          pageContext += "當前單元是【關卡1：基礎 Excel 魔法觀念】。";
+        } else if (pageText.includes('初階函數修行')) {
+          pageContext += "當前單元是【關卡2：初階函數修行】。";
+        } else if (pageText.includes('判斷之術 IF')) {
+          pageContext += "當前單元是【關卡3：判斷之術 IF】。";
+        } else if (pageText.includes('統計召喚法陣')) {
+          pageContext += "當前單元是【關卡4：統計召喚法陣】。";
+        } else if (pageText.includes('資料迷宮的魔法指南')) {
+          pageContext += "當前單元是【關卡5：資料迷宮的魔法指南】。";
+        }
 
-        // 把抓到的真實標題告訴 AI
-        pageContext += `當前單元是：【${lessonTitle}】。`;
-
-        // 判斷是在看內容還是做題目
-        if (pathname.includes('/challenge') || document.body.textContent?.includes('Challenge')) {
+        // 判斷挑戰題
+        if (pathname.includes('/challenge') || pageText.includes('Challenge')) {
           pageContext += "使用者正在進行此關卡的「挑戰題」，請給予引導與提示，絕對不要直接給答案！";
         } else {
           pageContext += "使用者正在瀏覽此關卡的「課程內容」。";
