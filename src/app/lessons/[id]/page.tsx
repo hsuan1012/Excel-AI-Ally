@@ -625,7 +625,7 @@ export default function ExcelLearningPlatform({ params }: { params: Promise<{ id
                     )}
                     
                     <div className="mt-12 pt-8 border-t-4 border-black border-dashed">
-                      <h3 className="text-2xl font-black mb-6 uppercase bg-yellow-300 inline-block px-2 border-2 border-black transform -rotate-1">互動教材</h3>
+                      <h3 className="text-2xl font-black mb-6 uppercase bg-yellow-300 inline-block px-2 border-2 border-black transform -rotate-1">互動式教材</h3>
                       {geniallyLink ? (
                         <div 
                           className="genially-container group relative w-full mx-auto max-w-[1200px] border-4 border-black rounded-xl overflow-hidden shadow-[8px_8px_0px_0px_#000]"
