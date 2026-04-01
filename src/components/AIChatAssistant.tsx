@@ -315,7 +315,8 @@ export function AIChatAssistant() {
     <>
       {/* 懸浮按鈕 */}
       {!isOpen && (
-        <div className="fixed bottom-6 right-6 z-[9999] animate-in fade-in zoom-in duration-300">
+        // <div className="fixed bottom-6 right-6 z-[9999] animate-in fade-in zoom-in duration-300">
+        <div className="hidden fixed bottom-6 right-6 z-[9999] animate-in fade-in zoom-in duration-300">
           <Button 
             onClick={toggleChat}
             // ✅ 修改：邊框顏色改為紫色
