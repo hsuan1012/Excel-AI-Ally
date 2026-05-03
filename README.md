@@ -5,10 +5,11 @@
 ## 技術
 
 - **前端框架：** Next.js, React
-- **語言：** TypeScript
-- **樣式與 UI：** Tailwind CSS
+- **程式語言：** TypeScript
+- **樣式與 UI：** Tailwind CSS, Lucide Icons
+- **資料庫：** Supabase
 - **AI 串接：** Google Gemini API
-- **資料庫/後端：** Supabase
+- **部署平台：** Vercel
 
 ## 核心功能特點
 
