@@ -2,8 +2,8 @@
 
 這是一個基於 Next.js (TypeScript) 開發的互動式 Excel 學習平台。本系統結合了「數位遊戲化學習 (DGBL)」與「AI 鷹架理論」，旨在透過遊戲化的闖關機制與生成式 AI 助教，降低初學者的認知負荷，幫助學生高效掌握 Excel 數據分析技巧。
 
+## 技術
 
-## 技術棧 (Tech Stack)
 - **前端框架：** Next.js, React
 - **語言：** TypeScript
 - **樣式與 UI：** Tailwind CSS
@@ -17,7 +17,7 @@
   - 等級提升與獎勵系統
   - 每日學習目標
 
-- **生成式 AI 助教支援 (Soft Scaffolding)**
+- **生成式 AI 助教支援 (軟性鷹架)**
   - 整合大語言模型，提供即時、情境化的問答
   - 智能學習診斷與個人化提示引導
   - 隨時可用的全域懸浮 AI 諮詢按鈕
@@ -31,7 +31,7 @@
 
 ## 檔案結構
 
-\`\`\`text
+```text
 src/
 ├── app/            # Next.js App Router 應用程式路由
 │   ├── admin/      # 管理員後台相關頁面
@@ -45,36 +45,35 @@ src/
 ├── data/           # 課程文本、數據結構與模擬資料
 ├── lib/            # 核心工具與服務整合 (Gemini AI 串接、Supabase 設定、進度演算邏輯)
 └── types/          # TypeScript 嚴格型別定義 
-\`\`\`
+```
 
-## 💻 本地端運行指南 (Getting Started)
+## 💻 本地端運行指南
 
 ### 1. 複製專案
-\`\`\`bash
-git clone https://github.com/yourusername/excel-ai-ally.git
+```bash
+git clone https://github.com/hsuan1012/excel-ai-ally.git
 cd excel-ai-ally
-\`\`\`
+```
 
 ### 2. 安裝依賴套件
-\`\`\`bash
+```bash
 npm install
-# 或是 yarn install / pnpm install
-\`\`\`
+```
 
 ### 3. 環境變數設定
 請在專案根目錄建立一個 `.env.local` 檔案，並填入以下資訊：
 
-\`\`\`env
-# Google Gemini AI API Key (必要)
+```env
+# Google Gemini AI API Key
 NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key_here
 
-# Supabase 資料庫連線設定 (必要)
+# Supabase 資料庫連線設定
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-\`\`\`
+```
 
 ### 4. 啟動開發伺服器
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 開啟瀏覽器並前往 [http://localhost:3000](http://localhost:3000) 即可查看專案。
