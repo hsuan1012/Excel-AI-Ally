@@ -261,31 +261,57 @@ export function AIChatAssistant() {
       
       let pageContext = `使用者目前在網站的路徑: ${pathname}。`;
 
+      // 💡 1. 取得學生的學習數據 (需要從你的 Context 或 LocalStorage 獲取)
+      // 這裡假設你目前暫時用 LocalStorage 存了一個簡單的 'user_level'，預設為 1
+      const userLevelStr = localStorage.getItem('user_level') || '1';
+      const userLevel = parseInt(userLevelStr, 10);
+
+      // 💡 2. 判斷單元進度
       if (pathname === '/') {
         pageContext += "這是首頁。";
       } else if (pathname?.includes('/lessons')) {
-        
-        // 🚀 終極必殺技：直接掃描網頁上的「所有文字」！
         const pageText = document.body.innerText || "";
         
-        // 只要畫面上出現過這些獨特的關鍵字，就絕對不會認錯：
+        // ... (保留你原本判斷關卡的 if-else 邏輯) ...
         if (pageText.includes('基礎 Excel 魔法觀念')) { 
           pageContext += "當前單元是【關卡1：基礎 Excel 魔法觀念】。";
-        } else if (pageText.includes('初階函數修行')) {
-          pageContext += "當前單元是【關卡2：初階函數修行】。";
-        } else if (pageText.includes('判斷之術 IF')) {
-          pageContext += "當前單元是【關卡3：判斷之術 IF】。";
-        } else if (pageText.includes('統計召喚法陣')) {
-          pageContext += "當前單元是【關卡4：統計召喚法陣】。";
-        } else if (pageText.includes('資料迷宮的魔法指南')) {
-          pageContext += "當前單元是【關卡5：資料迷宮的魔法指南】。";
-        }
+        } // ... 中間省略 ...
 
-        // 判斷挑戰題
+        // 💡 3. 動態設定「鷹架撤除」策略 (Scaffolding Fading)
         if (pathname.includes('/challenge') || pageText.includes('Challenge')) {
-          pageContext += "使用者正在進行此關卡的「挑戰題」，請給予引導與提示，絕對不要直接給答案！";
+          pageContext += "【當前狀態】：使用者正在進行挑戰題。\n";
+          
+          // 根據等級 (Level) 動態調整 AI 的協助程度
+          if (userLevel <= 2) {
+            // Level 1-2：高鷹架 (提供詳細步驟引導)
+            pageContext += `
+            【鷹架策略：高 (Hard Scaffolding)】：
+            這是一個初學者。請使用溫和、鼓勵的語氣。
+            當學生卡住時，請將問題拆解成多個小步驟，並「主動示範」第一個步驟。
+            如果學生詢問公式，可以給出公式的框架 (如：=VLOOKUP(要找什麼, 在哪裡找, ...))。
+            絕對不要直接給出完整答案，但要確保學生不會因為太難而感到挫折。
+            `;
+          } else if (userLevel <= 4) {
+            // Level 3-4：中鷹架 (提供線索與反問)
+            pageContext += `
+            【鷹架策略：中 (Soft Scaffolding / Fading)】：
+            這是一位有一定基礎的學生。請使用引導式的語氣。
+            當學生卡住時，**不要直接給出步驟**。請使用「反問法」引導他們思考。
+            例如：「你覺得這裡應該用哪個函數來計算總和呢？」或「如果出現 #N/A 錯誤，通常是因為找不到資料，你要不要檢查一下搜尋範圍？」
+            只給予觀念上的提示，讓學生自己寫出公式。
+            `;
+          } else {
+            // Level 5 以上：低/無鷹架 (鼓勵自主探索)
+            pageContext += `
+            【鷹架策略：撤除 (Faded Scaffolding)】：
+            這是一位高階學生。請扮演一個「點撥者」的角色。
+            不要給出任何具體的公式框架或步驟。
+            當學生提問時，請用簡短、啟發性的反問回應。例如：「試著回想一下 VLOOKUP 的第四個參數是什麼意思？」
+            除非學生明確表達「完全不知道怎麼辦」或連續錯誤兩次以上，否則請保持最低限度的介入。
+            `;
+          }
         } else {
-          pageContext += "使用者正在瀏覽此關卡的「課程內容」。";
+          pageContext += "使用者正在瀏覽此關卡的「課程內容」。可以提供一般性的概念解釋。";
         }
       }
 
