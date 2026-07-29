@@ -143,17 +143,16 @@ export async function saveLearningRecord(record: Omit<LearningRecord, 'id'>) {
       throw new Error('Missing required fields for learning record');
     }
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('learning_records')
-      .insert([record])
-      .select();
+      .insert([record]);
 
     if (error) {
       console.error('Error saving learning record:', error.message || JSON.stringify(error));
       throw error;
     }
 
-    return data;
+    return record;
   } catch (error) {
     console.error('Error in saveLearningRecord:', error instanceof Error ? error.message : JSON.stringify(error));
     throw error;
@@ -167,7 +166,7 @@ export async function saveLearningAnalytics(data: LearningAnalytics) {
       throw new Error('Missing required fields for learning analytics');
     }
 
-    const { data: result, error } = await supabase
+    const { error } = await supabase
       .from('learning_analytics')
       .insert([
         {
@@ -179,15 +178,14 @@ export async function saveLearningAnalytics(data: LearningAnalytics) {
           ai_interaction_count: data.ai_interaction_count,
           ai_chat_history: data.ai_chat_history,
         }
-      ])
-      .select();
+      ]);
 
     if (error) {
       console.error('Error saving learning analytics:', error.message);
       throw error;
     }
 
-    return result;
+    return data;
   } catch (error) {
     console.error('Error in saveLearningAnalytics:', error instanceof Error ? error.message : JSON.stringify(error));
     throw error;
@@ -325,9 +323,9 @@ export async function getLessonOrderMappings(): Promise<LessonOrderMapping[]> {
 
 export async function saveChatMessage(message: Omit<ChatMessageRecord, 'id'>) {
   try {
-    const { data, error } = await supabase.from('chat_messages').insert([message]).select();
+    const { error } = await supabase.from('chat_messages').insert([message]);
     if (error) throw error;
-    return data;
+    return message;
   } catch (error) {
     return null;
   }
