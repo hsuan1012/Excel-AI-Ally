@@ -2,18 +2,6 @@
 
 這是一個基於 Next.js (TypeScript) 開發的互動式 Excel 學習平台。本系統結合了「數位遊戲化學習 (DGBL)」與「AI 鷹架理論」，旨在透過遊戲化的闖關機制與生成式 AI 助教，降低初學者的認知負荷，幫助學生高效掌握 Excel 數據分析技巧。
 
-## 📸 系統畫面 (Screenshots)
-
-| 遊戲化學習地圖 | AI 助教即時互動 |
-| :---: | :---: |
-| ![遊戲化學習地圖](https://github.com/user-attachments/assets/89dd6935-f05b-448b-afbf-059408591be2) | ![AI 助教即時互動](https://github.com/user-attachments/assets/04137319-a8e1-4be5-9cb2-e3ee547aea55) |
-| **關卡式解鎖與進度追蹤，提升學習動機** | **全域懸浮 AI 助教，隨時提供解題提示** |
-
-| 課程闖關介面 | 學習成效儀表板 |
-| :---: | :---: |
-| ![課程介面](docs/images/lesson-interface.png) | ![後台儀表板](docs/images/dashboard.png) |
-| **結合情境的實作練習與立即回饋** | **視覺化呈現學生的學習進度與數據** |
-
 ## 技術
 
 - **前端框架：** Next.js, React
@@ -26,38 +14,38 @@
 ## 核心功能特點
 
 - **遊戲化學習體驗 (DGBL)**
-  - 關卡式解鎖與學習進度追蹤
-  - 等級提升與獎勵系統
-  - 每日學習目標
+  - 關卡式解鎖與學習進度追蹤
+  - 等級提升與獎勵系統
+  - 每日學習目標
 
 - **生成式 AI 助教支援 (軟性鷹架)**
-  - 整合大語言模型，提供即時、情境化的問答
-  - 智能學習診斷與個人化提示引導
-  - 隨時可用的全域懸浮 AI 諮詢按鈕
+  - 整合大語言模型，提供即時、情境化的問答
+  - 智能學習診斷與個人化提示引導
+  - 隨時可用的全域懸浮 AI 諮詢按鈕
 
 - **系統化課程模組**
-  - 基礎 Excel 魔法觀念 (工具欄, 工作表區域, 工作表標籤區)
-  - 初階函數修行 (SUM, COUNT, AVERAGE)
-  - 判斷之術 IF (單條件 IF, 多條件 IF)
-  - 統計召喚法陣 (樞紐分析表)
-  - 資料迷宮的魔法指南 (VLOOKUP)
+  - 基礎 Excel 魔法觀念 (工具欄, 工作表區域, 工作表標籤區)
+  - 初階函數修行 (SUM, COUNT, AVERAGE)
+  - 判斷之術 IF (單條件 IF, 多條件 IF)
+  - 統計召喚法陣 (樞紐分析表)
+  - 資料迷宮的魔法指南 (VLOOKUP)
 
 ## 檔案結構
 
 ```text
 src/
-├── app/            # Next.js App Router 應用程式路由
-│   ├── admin/      # 管理員後台相關頁面
-│   ├── lessons/    # 課程動態路由
-│   ├── layout.tsx  # 全局布局組件與樣式 
-│   └── page.tsx    # 系統首頁組件
-├── components/     # 專案核心與共用 UI 組件
-│   ├── ui/         # 基礎 UI 元件庫
-│   └── ...         # 包含 AIChatAssistant, ExcelMascot 等自訂互動組件
-├── context/        # React 全域狀態管理 
-├── data/           # 課程文本、數據結構與模擬資料
-├── lib/            # 核心工具與服務整合 (Gemini AI 串接、Supabase 設定、進度演算邏輯)
-└── types/          # TypeScript 嚴格型別定義 
+├── app/            # Next.js App Router 應用程式路由
+│   ├── admin/      # 管理員後台相關頁面
+│   ├── lessons/    # 課程動態路由
+│   ├── layout.tsx  # 全局布局組件與樣式 
+│   └── page.tsx    # 系統首頁組件
+├── components/     # 專案核心與共用 UI 組件
+│   ├── ui/         # 基礎 UI 元件庫
+│   └── ...         # 包含 AIChatAssistant, ExcelMascot 等自訂互動組件
+├── context/        # React 全域狀態管理 
+├── data/           # 課程文本、數據結構與模擬資料
+├── lib/            # 核心工具與服務整合 (Gemini AI 串接、Supabase 設定、進度演算邏輯)
+└── types/          # TypeScript 嚴格型別定義 
 ```
 
 ## 本地端運行指南
