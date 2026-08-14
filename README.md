@@ -13,31 +13,34 @@
 
 ## 核心功能特點
 
-- **遊戲化學習體驗 (DGBL)**
+- **數位遊戲化學習體驗 (DGBL)**
   - 關卡式解鎖與學習進度追蹤
-  - 等級提升與獎勵系統
+  - 等級提升與激勵回饋機制
   - 每日學習目標
 
-- **生成式 AI 學習助教支援**
-  - 整合大語言模型，提供即時、情境化的問答
-  - 智能學習診斷與個人化提示引導
-  - 隨時可用的全域懸浮 AI 諮詢按鈕
+- **生成式 AI 學習助教**
+  - 智慧對話介面
+  - 引導式提示工程
+  - 錯誤診斷與回饋
+  - 適性化輔導
 
-- **系統化課程模組**
-  - 基礎 Excel 魔法觀念 (工具欄, 工作表區域, 工作表標籤區)
+- **互動式課程教材**
+  - 基礎 Excel 魔法觀念 (Excel 介面與儲存格等基礎操作)
   - 初階函數修行 (SUM, COUNT, AVERAGE)
   - 判斷之術 IF (單條件 IF, 多條件 IF)
   - 統計召喚法陣 (樞紐分析表)
-  - 資料迷宮的魔法指南 (VLOOKUP)
+  - 資料迷宮的魔法指南 (VLOOKUP, XLOOKUP)
 
 ## 系統畫面
 
-| 遊戲化闖關地圖 | 互動式課程教材 |
+| **遊戲化闖關地圖** | **互動式課程教材** |
+
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/a81f7646-97bf-4ef3-a086-fb644e1a910a" width="400" alt="遊戲化闖關地圖" /> | <img src="https://github.com/user-attachments/assets/7d06e7ce-34cb-4e85-9efc-3fe9a6b5e46c" width="400" alt="互動式課程教材" /> |
 | 整合遊戲化獎勵機制 | Excel 操作介面轉化為可互動的點選區塊 |
 
-| 情境式挑戰任務 | AI 學習助教 |
+| **情境式挑戰任務** | **AI 學習助教** |
+
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/871f47ed-495d-4a97-af3d-d311ee826c31" width="400" alt="情境式挑戰任務" /> | <img src="https://github.com/user-attachments/assets/7200f992-4f31-4172-80ce-1ab51ae75b4c" width="400" alt="AI 學習助教" /> |
 | 結合情境的實作練習與立即回饋 | 全域懸浮 AI 學習助教 |
