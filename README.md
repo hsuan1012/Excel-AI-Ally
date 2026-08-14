@@ -6,8 +6,7 @@
 
 | 遊戲化學習地圖 | AI 助教即時互動 |
 | :---: | :---: |
-| <img width="2640" height="1279" alt="image" src="https://github.com/user-attachments/assets/89dd6935-f05b-448b-afbf-059408591be2" />
-| <img width="1154" height="948" alt="image" src="https://github.com/user-attachments/assets/04137319-a8e1-4be5-9cb2-e3ee547aea55" />|
+| ![遊戲化學習地圖](https://github.com/user-attachments/assets/89dd6935-f05b-448b-afbf-059408591be2) | ![AI 助教即時互動](https://github.com/user-attachments/assets/04137319-a8e1-4be5-9cb2-e3ee547aea55) |
 | **關卡式解鎖與進度追蹤，提升學習動機** | **全域懸浮 AI 助教，隨時提供解題提示** |
 
 | 課程闖關介面 | 學習成效儀表板 |
