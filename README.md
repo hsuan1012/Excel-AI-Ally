@@ -30,6 +30,19 @@
   - 統計召喚法陣 (樞紐分析表)
   - 資料迷宮的魔法指南 (VLOOKUP)
 
+## 系統畫面
+
+| 遊戲化學習地圖 | AI 助教即時互動 |
+| :---: | :---: |
+| ![學習地圖](<img width="2640" height="1279" alt="螢幕擷取畫面 2026-08-14 100751" src="https://github.com/user-attachments/assets/96986f89-572e-44a2-81b1-6d9da2ace757" />
+) | ![AI 助教](docs/images/ai-assistant.png) |
+| **關卡式解鎖與進度追蹤，提升學習動機** | **全域懸浮 AI 助教，隨時提供解題提示** |
+
+| 課程闖關介面 | 學習成效儀表板 |
+| :---: | :---: |
+| ![課程介面](docs/images/lesson-interface.png) | ![後台儀表板](docs/images/dashboard.png) |
+| **結合情境的實作練習與立即回饋** | **視覺化呈現學生的學習進度與數據** |
+
 ## 檔案結構
 
 ```text
