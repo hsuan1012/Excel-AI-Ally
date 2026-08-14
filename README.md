@@ -39,7 +39,7 @@
 
 | 課程闖關介面 | 學習成效儀表板 |
 | :---: | :---: |
-| ![課程介面](docs/images/lesson-interface.png) | ![後台儀表板](docs/images/dashboard.png) |
+| ![課程介面](https://github.com/user-attachments/assets/47b55cf8-bc07-45aa-9eb8-6f258e5cdda5) | ![後台儀表板](https://github.com/user-attachments/assets/f16dda27-23b7-4b84-9bec-311b59a1378d) |
 | **結合情境的實作練習與立即回饋** | **視覺化呈現學生的學習進度與數據** |
 
 ## 檔案結構
