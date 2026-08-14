@@ -2,6 +2,19 @@
 
 這是一個基於 Next.js (TypeScript) 開發的互動式 Excel 學習平台。本系統結合了「數位遊戲化學習 (DGBL)」與「AI 鷹架理論」，旨在透過遊戲化的闖關機制與生成式 AI 助教，降低初學者的認知負荷，幫助學生高效掌握 Excel 數據分析技巧。
 
+## 📸 系統畫面 (Screenshots)
+
+| 遊戲化學習地圖 | AI 助教即時互動 |
+| :---: | :---: |
+| <img width="2640" height="1279" alt="image" src="https://github.com/user-attachments/assets/89dd6935-f05b-448b-afbf-059408591be2" />
+ | ![AI 助教](docs/images/ai-assistant.png) |
+| **關卡式解鎖與進度追蹤，提升學習動機** | **全域懸浮 AI 助教，隨時提供解題提示** |
+
+| 課程闖關介面 | 學習成效儀表板 |
+| :---: | :---: |
+| ![課程介面](docs/images/lesson-interface.png) | ![後台儀表板](docs/images/dashboard.png) |
+| **結合情境的實作練習與立即回饋** | **視覺化呈現學生的學習進度與數據** |
+
 ## 技術
 
 - **前端框架：** Next.js, React
@@ -78,4 +91,3 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 npm run dev
 ```
 開啟瀏覽器並前往 [http://localhost:3000](http://localhost:3000) 即可查看專案。
-<img width="2669" height="1301" alt="image" src="https://github.com/user-attachments/assets/b0c2c381-7355-46ed-8b1f-ae23390af70b" />
