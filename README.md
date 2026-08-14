@@ -78,3 +78,4 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 npm run dev
 ```
 開啟瀏覽器並前往 [http://localhost:3000](http://localhost:3000) 即可查看專案。
+<img width="2669" height="1301" alt="image" src="https://github.com/user-attachments/assets/b0c2c381-7355-46ed-8b1f-ae23390af70b" />
