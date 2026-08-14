@@ -1,6 +1,6 @@
 # Excel AI Ally：數位遊戲化學習系統
 
-《Excel AI Ally》是一個結合「數位遊戲化學習 (DGBL)」與「AI 鷹架理論」的互動式學習平台。本系統透過趣味的闖關機制與生成式 AI 學習助教，有效降低初學者的認知負荷，幫助學生高效掌握 Excel 數據分析技巧。
+《Excel AI Ally》是一個結合「數位遊戲化學習 (DGBL)」與「AI 鷹架理論」的互動式學習平台。本系統透過趣味的闖關機制與生成式 AI 學習助教，有效提升初學者的心流體驗，幫助學生高效掌握 Excel 數據分析技巧。
 
 ## 技術
 
@@ -35,12 +35,12 @@
 | 遊戲化闖關地圖 | 互動式課程教材 |
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/a81f7646-97bf-4ef3-a086-fb644e1a910a" width="400" alt="遊戲化闖關地圖" /> | <img src="https://github.com/user-attachments/assets/7d06e7ce-34cb-4e85-9efc-3fe9a6b5e46c" width="400" alt="互動式課程教材" /> |
-| 整合遊戲化獎勵機制，提升學習動機 | Excel 操作介面轉化為可互動的點選區塊 |
+| 整合遊戲化獎勵機制 | Excel 操作介面轉化為可互動的點選區塊 |
 
 | 情境式挑戰任務 | AI 學習助教 |
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/871f47ed-495d-4a97-af3d-d311ee826c31" width="400" alt="情境式挑戰任務" /> | <img src="https://github.com/user-attachments/assets/7200f992-4f31-4172-80ce-1ab51ae75b4c" width="400" alt="AI 學習助教" /> |
-| 結合情境的實作練習與立即回饋 | 全域懸浮 AI 學習助教，隨時提供解題提示 |
+| 結合情境的實作練習與立即回饋 | 全域懸浮 AI 學習助教 |
 
 ## 檔案結構
 
