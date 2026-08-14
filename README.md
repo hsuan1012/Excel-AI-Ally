@@ -32,15 +32,15 @@
 
 ## 系統畫面
 
-| 遊戲化學習地圖 | 課程闖關介面 |
+| 遊戲化闖關地圖 | 互動式課程教材 |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/96986f89-572e-44a2-81b1-6d9da2ace757" width="400" alt="學習地圖" /> | <img src="https://github.com/user-attachments/assets/47b55cf8-bc07-45aa-9eb8-6f258e5cdda5" width="400" alt="課程介面" /> |
+| <img src="https://github.com/user-attachments/assets/a81f7646-97bf-4ef3-a086-fb644e1a910a" width="400" alt="遊戲化闖關地圖" /> | <img src="https://github.com/user-attachments/assets/7d06e7ce-34cb-4e85-9efc-3fe9a6b5e46c" width="400" alt="互動式課程教材" /> |
 | **關卡式解鎖與進度追蹤，提升學習動機** | **結合情境的實作練習與立即回饋** |
 
-| AI 助教即時互動 | 學習成效儀表板 |
+| 情境式挑戰任務 | AI 學習助教 |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/cf378777-9bca-4294-bef7-20c692a07dd5" width="400" alt="AI 助教" /> | <img src="https://github.com/user-attachments/assets/f16dda27-23b7-4b84-9bec-311b59a1378d" width="400" alt="後台儀表板" /> |
-| **全域懸浮 AI 助教，隨時提供解題提示** | **視覺化呈現學生的學習進度與數據** |
+| <img src="https://github.com/user-attachments/assets/871f47ed-495d-4a97-af3d-d311ee826c31" width="400" alt="情境式挑戰任務" /> | <img src="https://github.com/user-attachments/assets/7200f992-4f31-4172-80ce-1ab51ae75b4c" width="400" alt="AI 學習助教" /> |
+| **視覺化呈現學生的學習進度與數據** | **全域懸浮 AI 助教，隨時提供解題提示** |
 
 ## 檔案結構
 
