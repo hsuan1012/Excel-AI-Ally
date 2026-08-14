@@ -34,11 +34,13 @@
 
 | 遊戲化闖關地圖 | 互動式課程教材 |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/a81f7646-97bf-4ef3-a086-fb644e1a910a" width="400" alt="遊戲化闖關地圖" /><br><br>**整合遊戲化獎勵機制** | <img src="https://github.com/user-attachments/assets/7d06e7ce-34cb-4e85-9efc-3fe9a6b5e46c" width="400" alt="互動式課程教材" /><br><br>**Excel 操作介面轉化為可互動的點選區塊** |
+| <img src="https://github.com/user-attachments/assets/a81f7646-97bf-4ef3-a086-fb644e1a910a" width="400" alt="遊戲化闖關地圖" /> | <img src="https://github.com/user-attachments/assets/7d06e7ce-34cb-4e85-9efc-3fe9a6b5e46c" width="400" alt="互動式課程教材" /> |
+| 整合遊戲化獎勵機制 | Excel 操作介面轉化為可互動的點選區塊 |
 
 | 情境式挑戰任務 | AI 學習助教 |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/871f47ed-495d-4a97-af3d-d311ee826c31" width="400" alt="情境式挑戰任務" /><br><br>**結合情境的實作練習與立即回饋** | <img src="https://github.com/user-attachments/assets/7200f992-4f31-4172-80ce-1ab51ae75b4c" width="400" alt="AI 學習助教" /><br><br>**全域懸浮 AI 學習助教** |
+| <img src="https://github.com/user-attachments/assets/871f47ed-495d-4a97-af3d-d311ee826c31" width="400" alt="情境式挑戰任務" /> | <img src="https://github.com/user-attachments/assets/7200f992-4f31-4172-80ce-1ab51ae75b4c" width="400" alt="AI 學習助教" /> |
+| 結合情境的實作練習與立即回饋 | 全域懸浮 AI 學習助教 |
 
 ## 檔案結構
 
