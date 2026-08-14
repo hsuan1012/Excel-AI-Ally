@@ -1,4 +1,4 @@
-# Excel AI Ally：數位遊戲化學習系統
+<img width="1154" height="948" alt="image" src="https://github.com/user-attachments/assets/8e95c0b3-e354-4d3e-8a78-829ae2d0480c" /># Excel AI Ally：數位遊戲化學習系統
 
 這是一個基於 Next.js (TypeScript) 開發的互動式 Excel 學習平台。本系統結合了「數位遊戲化學習 (DGBL)」與「AI 鷹架理論」，旨在透過遊戲化的闖關機制與生成式 AI 助教，降低初學者的認知負荷，幫助學生高效掌握 Excel 數據分析技巧。
 
@@ -7,7 +7,7 @@
 | 遊戲化學習地圖 | AI 助教即時互動 |
 | :---: | :---: |
 | <img width="2640" height="1279" alt="image" src="https://github.com/user-attachments/assets/89dd6935-f05b-448b-afbf-059408591be2" />
- | ![AI 助教](docs/images/ai-assistant.png) |
+| <img width="1154" height="948" alt="image" src="https://github.com/user-attachments/assets/04137319-a8e1-4be5-9cb2-e3ee547aea55" />|
 | **關卡式解鎖與進度追蹤，提升學習動機** | **全域懸浮 AI 助教，隨時提供解題提示** |
 
 | 課程闖關介面 | 學習成效儀表板 |
