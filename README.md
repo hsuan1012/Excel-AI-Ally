@@ -41,6 +41,7 @@
 | **情境式挑戰任務** | **AI 學習助教** |
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/871f47ed-495d-4a97-af3d-d311ee826c31" width="400" alt="情境式挑戰任務" /> | <img src="https://github.com/user-attachments/assets/7200f992-4f31-4172-80ce-1ab51ae75b4c" width="400" alt="AI 學習助教" /> |
+
 | 結合情境的實作練習與立即回饋 | 全域懸浮 AI 學習助教 |
 
 
