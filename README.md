@@ -34,14 +34,14 @@
 
 | 遊戲化學習地圖 | AI 助教即時互動 |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/96986f89-572e-44a2-81b1-6d9da2ace757" width="400" alt="學習地圖" /> | <img src="https://github.com/user-attachments/assets/47b55cf8-bc07-45aa-9eb8-6f258e5cdda5" width="400" alt="課程介面" /> |
+| <img src="https://github.com/user-attachments/assets/96986f89-572e-44a2-81b1-6d9da2ace757" width="400" alt="學習地圖" /> | <img src="https://github.com/user-attachments/assets/cf378777-9bca-4294-bef7-20c692a07dd5" width="400" alt="AI 助教" /> |
 | **關卡式解鎖與進度追蹤，提升學習動機** | **全域懸浮 AI 助教，隨時提供解題提示** |
 
 | 課程闖關介面 | 學習成效儀表板 |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/f16dda27-23b7-4b84-9bec-311b59a1378d" width="400" alt="後台儀表板" /> | <img src="https://github.com/user-attachments/assets/cf378777-9bca-4294-bef7-20c692a07dd5" width="400" alt="AI 助教" |
+| <img src="https://github.com/user-attachments/assets/47b55cf8-bc07-45aa-9eb8-6f258e5cdda5" width="400" alt="課程介面" /> | <img src="https://github.com/user-attachments/assets/f16dda27-23b7-4b84-9bec-311b59a1378d" width="400" alt="後台儀表板" /> |
 | **結合情境的實作練習與立即回饋** | **視覺化呈現學生的學習進度與數據** |
- />
+
 ## 檔案結構
 
 ```text
