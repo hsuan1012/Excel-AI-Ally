@@ -36,7 +36,6 @@
 | **遊戲化闖關地圖** | **互動式課程教材內容** |
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/a81f7646-97bf-4ef3-a086-fb644e1a910a" width="400" alt="遊戲化闖關地圖" /> | <img src="https://github.com/user-attachments/assets/7d06e7ce-34cb-4e85-9efc-3fe9a6b5e46c" width="400" alt="互動式課程教材" /> |
-<td width="50%" align="center">
 | 整合遊戲化獎勵機制 | Excel 操作介面轉化為可互動的點選區塊 |
 
 | **情境式挑戰任務** | **AI 學習助教** |
